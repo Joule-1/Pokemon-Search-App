@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon</title>
+    <link rel="icon" type="image/x-icon" href="https://www.pokemon.com/static-assets/content-assets/cms2/img/pokedex/full/025.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="title">
+        Pokémon Search App
+    </div>
+    <form id="form" onsubmit="event.preventDefault();">
+        <div id="search-group">
+            <input type="text" id="search-input" autocomplete="off" autofocus placeholder="Type Pokémon Name or ID" required>
+            <button id="search-button" onclick="handleEvent()">Dracarys</button>
+        </div>
+        <div id="image-container">
+            <div id="pokemon-name"></div>
+            <div id="pokemon-id"></div>   
+            <img id="sprite">
+            <div id="types"></div>
+        </div>
+        <section id="properties">
+            <div id="base" class="box">Base</div>
+            <div id="stats" class="box">Stats</div>
+            <div id="hp_base" class="box">HP:</div>
+            <div id="hp" class="box"></div>
+            <div id="attack_base" class="box">Attack:</div>
+            <div id="attack" class="box"></div>
+            <div id="defense_base" class="box">Defense:</div>
+            <div id="defense" class="box"></div>
+            <div id="sp_attack_base" class="box">Sp. Attack:</div>
+            <div id="special-attack" class="box"></div>
+            <div id="sp_defense_base" class="box">Sp. Defense:</div>
+            <div id="special-defense" class="box"></div>
+            <div id="speed_base" class="box">Speed:</div>
+            <div id="speed" class="box"></div>
+            <div id="weight_base" class="box">Weight:</div>
+            <div id="weight" class="box"></div>
+            <div id="height_base" class="box">Height:</div>
+            <div id="height" class="box"></div>
+        </section>
+    </form>
+    <div id="quotes">
+        Chaos is the Ladder
+    </div>
+</body>
+<script type="text/javascript" src="script.js"></script>  
+</html>
